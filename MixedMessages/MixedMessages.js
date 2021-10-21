@@ -9,8 +9,11 @@ so far to build the program and customize it to your liking.*/
          _names: names,
          _message1: message1,
          _message2: message2,
-         _message3: message3
-         
+         _message3: message3,
+
+         const randomMessage1 () {
+             
+         }
 
 
      }
