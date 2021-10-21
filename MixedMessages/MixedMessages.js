@@ -4,7 +4,7 @@ like an astrology generator, inspirational message, or nonsensical jokes. To mak
  the message that it outputs should be made up of at least three different pieces of data. Take what you know of JavaScript syntax 
 so far to build the program and customize it to your liking.*/
 
- const message() {
+ const message =() => {
      return {
          _names: [],
          _messages1: [],
