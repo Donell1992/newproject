@@ -34,5 +34,21 @@ so far to build the program and customize it to your liking.*/
          },
          set message3(messaged3){
              this._message3.push(messaged3)
-         }
+ 
+           }
  }
+ // creating Random generator for the length of the my arrays in message  
+
+ const randomGenerator = (arr) => {
+     return  Math.floor(Math.random * arr.length)
+ }
+// create final message using randomGenerator function to select elements from the four arrays in message object
+ const finalMessage = () => {
+     let name = randomGenerator(message.names)
+     let first = randomGenerator(message.message1)
+     let second = randomGenerator(message.message2)
+     let third = randomGenerator(message.message3)
+
+ }
+
+
