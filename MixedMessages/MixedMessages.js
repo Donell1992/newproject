@@ -38,9 +38,10 @@ so far to build the program and customize it to your liking.*/
            }
  }
  // creating Random generator for the length of the my arrays in message  
-
+// I forgot to use ( after the Math.random which completely messes me up since i skipped all the way to the end of the projected. thats why the steps are important!!!)
  const randomGenerator = (arr) => {
-     return  Math.floor(Math.random * arr.length)
+    let element = Math.floor(Math.random() * arr.length)
+    return arr[element]
  }
 // create final message using randomGenerator function to select elements from the four arrays in message object
  const finalMessage = () => {
@@ -49,6 +50,25 @@ so far to build the program and customize it to your liking.*/
      let second = randomGenerator(message.message2)
      let third = randomGenerator(message.message3)
 
+     return name + ', ' + first + ' ' + second + ' ' + third;
+
  }
 
-
+ message.names = "Donell"
+ message.names = "Maddie"
+ message.names = "Thibualt"
+ message.names = "Beau"
+ message.names = "Rose"
+ message.names = "Rugger"
+ message.message1 = "This is about your"
+ message.message1 = "I hope you haven't"
+ message.message1 = "I'm sick of this"
+ message.message1 = "We can get you"
+ message.message2 = "kids they are"
+ message.message2 = "when are you going to"
+ message.message2 = "this is amazing"
+ message.message3 = "you need to leave now"
+ message.message3 = "giving up"
+ message.message3 = "I hate this part"
+ 
+ console.log(finalMessage())
